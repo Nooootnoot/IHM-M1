@@ -1,0 +1,86 @@
+.ladder-lol-main{
+    width: 100%;
+    padding-top: 6em;
+    padding-bottom: 6em;
+    font-family: "BeaufortforLOL-Medium", system-ui, sans-serif !important;
+    font-size: 1.2em;
+    background-color: #d9d9d9;
+}
+
+.ladder-lol-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.ladder-lol-rank-icon{
+    width: 50px;
+    height: 50px;
+}
+
+.ladder-lol-winrate-green{
+    color: #1a981a !important;
+}
+
+.ladder-lol-winrate-red{
+    color: #ea1515 !important;
+}
+
+.ladder-lol-champ-icon{
+    width: 50px;
+    height: 50px;
+}
+
+.ladder-lol-win{
+    box-shadow: 0 0 15px 2px #1a981a;
+}
+
+.ladder-lol-loss{
+    box-shadow: 0 0 15px 2px #ea1515;
+}
+
+.ladder-lol-champ-kda{
+    font-size: 0.8em !important;
+    font-weight: bold !important;
+}
+
+.ladder-lol-hot-streak{
+    position: absolute;
+    left: -12px;
+    top: -20px;
+    z-index: 1;
+}
+
+.hot-streak-display{
+    display: block;
+}
+
+.hot-streak-display-none{
+    display: none;
+}
+
+.ladder-lol-position-icon{
+    width: 30px;
+    height: 30px;
+}
+
+.text-glow{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #00ff00; /* Couleur de base du cercle */
+    box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;
+        opacity: 1;
+    }
+    100% {
+        box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+        opacity: 0.8;
+    }
+}

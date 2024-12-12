@@ -1,0 +1,9 @@
+.banner-container::after {
+    box-shadow: inset -1px -24px 15px -16px #000000;
+    content: '';
+    display: block;
+    height: 450px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}

@@ -1,0 +1,23 @@
+.carrousel-kda{
+    font-size: 0.6em;
+    font-weight: bold;
+}
+
+.carrousel-champ-icon{
+    width: 40px;
+    height: 40px;
+}
+
+.carrousel-date{
+    font-size: 0.55em;
+}
+
+.carrousel-joueur{
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.carrousel-gamemode{
+    font-size: 0.55em;
+    font-weight: bold;
+}

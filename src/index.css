@@ -1,0 +1,399 @@
+body {
+  margin: 0;
+  height: 100%;
+}
+
+html{
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+}
+
+#root{
+  height: 100%;
+  width: 100%;
+}
+
+@font-face {
+  font-family: 'Tungsten Compressed Semi';
+  src: url('./font/TungstenCompressed-SemiBold.eot');
+  src: local('Tungsten Compressed SemiBold'), local('TungstenCompressed-SemiBold'),
+  url('./font/TungstenCompressed-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('./font/TungstenCompressed-SemiBold.woff2') format('woff2'),
+  url('./font/TungstenCompressed-SemiBold.woff') format('woff'),
+  url('./font/TungstenCompressed-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten Compressed';
+  src: url('./font/TungstenCompressed-Light.eot');
+  src: local('Tungsten Compressed Light'), local('TungstenCompressed-Light'),
+  url('./font/TungstenCompressed-Light.eot?#iefix') format('embedded-opentype'),
+  url('./font/TungstenCompressed-Light.woff2') format('woff2'),
+  url('./font/TungstenCompressed-Light.woff') format('woff'),
+  url('./font/TungstenCompressed-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten Compressed';
+  src: url('./font/TungstenCompressed-Thin.eot');
+  src: local('Tungsten Compressed Thin'), local('TungstenCompressed-Thin'),
+  url('./font/TungstenCompressed-Thin.eot?#iefix') format('embedded-opentype'),
+  url('./font/TungstenCompressed-Thin.woff2') format('woff2'),
+  url('./font/TungstenCompressed-Thin.woff') format('woff'),
+  url('./font/TungstenCompressed-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten Narrow';
+  src: url('./font/TungstenNarrow-SemiBold.eot');
+  src: local('Tungsten Narrow SemiBold'), local('TungstenNarrow-SemiBold'),
+  url('./font/TungstenNarrow-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('./font/TungstenNarrow-SemiBold.woff2') format('woff2'),
+  url('./font/TungstenNarrow-SemiBold.woff') format('woff'),
+  url('./font/TungstenNarrow-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten Narrow';
+  src: url('./font/TungstenNarrow-Light.eot');
+  src: local('Tungsten Narrow Light'), local('TungstenNarrow-Light'),
+  url('./font/TungstenNarrow-Light.eot?#iefix') format('embedded-opentype'),
+  url('./font/TungstenNarrow-Light.woff2') format('woff2'),
+  url('./font/TungstenNarrow-Light.woff') format('woff'),
+  url('./font/TungstenNarrow-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten Compressed XLight';
+  src: url('./font/TungstenCompressed-ExtraLight.eot');
+  src: local('Tungsten Compressed ExtraLight'), local('TungstenCompressed-ExtraLight'),
+  url('./font/TungstenCompressed-ExtraLight.eot?#iefix') format('embedded-opentype'),
+  url('./font/TungstenCompressed-ExtraLight.woff2') format('woff2'),
+  url('./font/TungstenCompressed-ExtraLight.woff') format('woff'),
+  url('./font/TungstenCompressed-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten Compressed Book';
+  src: url('./font/TungstenCompressed-Book.eot');
+  src: local('Tungsten Compressed Book'), local('TungstenCompressed-Book'),
+  url('./font/TungstenCompressed-Book.eot?#iefix') format('embedded-opentype'),
+  url('./font/TungstenCompressed-Book.woff2') format('woff2'),
+  url('./font/TungstenCompressed-Book.woff') format('woff'),
+  url('./font/TungstenCompressed-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten Condensed Book';
+  src: url('./font/TungstenCondensed-Book.eot');
+  src: local('Tungsten Condensed Book'), local('TungstenCondensed-Book'),
+  url('./font/TungstenCondensed-Book.eot?#iefix') format('embedded-opentype'),
+  url('./font/TungstenCondensed-Book.woff2') format('woff2'),
+  url('./font/TungstenCondensed-Book.woff') format('woff'),
+  url('./font/TungstenCondensed-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten Narrow Book';
+  src: url('./font/TungstenNarrow-Book.eot');
+  src: local('Tungsten Narrow Book'), local('TungstenNarrow-Book'),
+  url('./font/TungstenNarrow-Book.eot?#iefix') format('embedded-opentype'),
+  url('./font/TungstenNarrow-Book.woff2') format('woff2'),
+  url('./font/TungstenNarrow-Book.woff') format('woff'),
+  url('./font/TungstenNarrow-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten';
+  src: url('./font/Tungsten-Thin.eot');
+  src: local('Tungsten Thin'), local('Tungsten-Thin'),
+  url('./font/Tungsten-Thin.eot?#iefix') format('embedded-opentype'),
+  url('./font/Tungsten-Thin.woff2') format('woff2'),
+  url('./font/Tungsten-Thin.woff') format('woff'),
+  url('./font/Tungsten-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten Narrow';
+  src: url('./font/TungstenNarrow-Thin.eot');
+  src: local('Tungsten Narrow Thin'), local('TungstenNarrow-Thin'),
+  url('./font/TungstenNarrow-Thin.eot?#iefix') format('embedded-opentype'),
+  url('./font/TungstenNarrow-Thin.woff2') format('woff2'),
+  url('./font/TungstenNarrow-Thin.woff') format('woff'),
+  url('./font/TungstenNarrow-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten XLight';
+  src: url('./font/Tungsten-ExtraLight.eot');
+  src: local('Tungsten ExtraLight'), local('Tungsten-ExtraLight'),
+  url('./font/Tungsten-ExtraLight.eot?#iefix') format('embedded-opentype'),
+  url('./font/Tungsten-ExtraLight.woff2') format('woff2'),
+  url('./font/Tungsten-ExtraLight.woff') format('woff'),
+  url('./font/Tungsten-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten Condensed';
+  src: url('./font/TungstenCondensed-Bold.eot');
+  src: local('Tungsten Condensed Bold'), local('TungstenCondensed-Bold'),
+  url('./font/TungstenCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+  url('./font/TungstenCondensed-Bold.woff2') format('woff2'),
+  url('./font/TungstenCondensed-Bold.woff') format('woff'),
+  url('./font/TungstenCondensed-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten Condensed';
+  src: url('./font/TungstenCondensed-Black.eot');
+  src: local('Tungsten Condensed Black'), local('TungstenCondensed-Black'),
+  url('./font/TungstenCondensed-Black.eot?#iefix') format('embedded-opentype'),
+  url('./font/TungstenCondensed-Black.woff2') format('woff2'),
+  url('./font/TungstenCondensed-Black.woff') format('woff'),
+  url('./font/TungstenCondensed-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten Compressed';
+  src: url('./font/TungstenCompressed-Medium.eot');
+  src: local('Tungsten Compressed Medium'), local('TungstenCompressed-Medium'),
+  url('./font/TungstenCompressed-Medium.eot?#iefix') format('embedded-opentype'),
+  url('./font/TungstenCompressed-Medium.woff2') format('woff2'),
+  url('./font/TungstenCompressed-Medium.woff') format('woff'),
+  url('./font/TungstenCompressed-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten Narrow';
+  src: url('./font/TungstenNarrow-Medium.eot');
+  src: local('Tungsten Narrow Medium'), local('TungstenNarrow-Medium'),
+  url('./font/TungstenNarrow-Medium.eot?#iefix') format('embedded-opentype'),
+  url('./font/TungstenNarrow-Medium.woff2') format('woff2'),
+  url('./font/TungstenNarrow-Medium.woff') format('woff'),
+  url('./font/TungstenNarrow-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten Condensed XLight';
+  src: url('./font/TungstenCondensed-ExtraLight.eot');
+  src: local('Tungsten Condensed ExtraLight'), local('TungstenCondensed-ExtraLight'),
+  url('./font/TungstenCondensed-ExtraLight.eot?#iefix') format('embedded-opentype'),
+  url('./font/TungstenCondensed-ExtraLight.woff2') format('woff2'),
+  url('./font/TungstenCondensed-ExtraLight.woff') format('woff'),
+  url('./font/TungstenCondensed-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten Condensed';
+  src: url('./font/TungstenCondensed-Light.eot');
+  src: local('Tungsten Condensed Light'), local('TungstenCondensed-Light'),
+  url('./font/TungstenCondensed-Light.eot?#iefix') format('embedded-opentype'),
+  url('./font/TungstenCondensed-Light.woff2') format('woff2'),
+  url('./font/TungstenCondensed-Light.woff') format('woff'),
+  url('./font/TungstenCondensed-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten';
+  src: url('./font/Tungsten-Medium.eot');
+  src: local('Tungsten Medium'), local('Tungsten-Medium'),
+  url('./font/Tungsten-Medium.eot?#iefix') format('embedded-opentype'),
+  url('./font/Tungsten-Medium.woff2') format('woff2'),
+  url('./font/Tungsten-Medium.woff') format('woff'),
+  url('./font/Tungsten-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten Book';
+  src: url('./font/Tungsten-Book.eot');
+  src: local('Tungsten Book'), local('Tungsten-Book'),
+  url('./font/Tungsten-Book.eot?#iefix') format('embedded-opentype'),
+  url('./font/Tungsten-Book.woff2') format('woff2'),
+  url('./font/Tungsten-Book.woff') format('woff'),
+  url('./font/Tungsten-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten Condensed';
+  src: url('./font/TungstenCondensed-Medium.eot');
+  src: local('Tungsten Condensed Medium'), local('TungstenCondensed-Medium'),
+  url('./font/TungstenCondensed-Medium.eot?#iefix') format('embedded-opentype'),
+  url('./font/TungstenCondensed-Medium.woff2') format('woff2'),
+  url('./font/TungstenCondensed-Medium.woff') format('woff'),
+  url('./font/TungstenCondensed-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten';
+  src: url('./font/Tungsten-Light.eot');
+  src: local('Tungsten Light'), local('Tungsten-Light'),
+  url('./font/Tungsten-Light.eot?#iefix') format('embedded-opentype'),
+  url('./font/Tungsten-Light.woff2') format('woff2'),
+  url('./font/Tungsten-Light.woff') format('woff'),
+  url('./font/Tungsten-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten Narrow';
+  src: url('./font/TungstenNarrow-Bold.eot');
+  src: local('Tungsten Narrow Bold'), local('TungstenNarrow-Bold'),
+  url('./font/TungstenNarrow-Bold.eot?#iefix') format('embedded-opentype'),
+  url('./font/TungstenNarrow-Bold.woff2') format('woff2'),
+  url('./font/TungstenNarrow-Bold.woff') format('woff'),
+  url('./font/TungstenNarrow-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten Compressed';
+  src: url('./font/TungstenCompressed-Black.eot');
+  src: local('Tungsten Compressed Black'), local('TungstenCompressed-Black'),
+  url('./font/TungstenCompressed-Black.eot?#iefix') format('embedded-opentype'),
+  url('./font/TungstenCompressed-Black.woff2') format('woff2'),
+  url('./font/TungstenCompressed-Black.woff') format('woff'),
+  url('./font/TungstenCompressed-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten Condensed';
+  src: url('./font/TungstenCondensed-SemiBold.eot');
+  src: local('Tungsten Condensed SemiBold'), local('TungstenCondensed-SemiBold'),
+  url('./font/TungstenCondensed-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('./font/TungstenCondensed-SemiBold.woff2') format('woff2'),
+  url('./font/TungstenCondensed-SemiBold.woff') format('woff'),
+  url('./font/TungstenCondensed-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten Compressed';
+  src: url('./font/TungstenCompressed-Bold.eot');
+  src: local('Tungsten Compressed Bold'), local('TungstenCompressed-Bold'),
+  url('./font/TungstenCompressed-Bold.eot?#iefix') format('embedded-opentype'),
+  url('./font/TungstenCompressed-Bold.woff2') format('woff2'),
+  url('./font/TungstenCompressed-Bold.woff') format('woff'),
+  url('./font/TungstenCompressed-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten Narrow';
+  src: url('./font/TungstenNarrow-Black.eot');
+  src: local('Tungsten Narrow Black'), local('TungstenNarrow-Black'),
+  url('./font/TungstenNarrow-Black.eot?#iefix') format('embedded-opentype'),
+  url('./font/TungstenNarrow-Black.woff2') format('woff2'),
+  url('./font/TungstenNarrow-Black.woff') format('woff'),
+  url('./font/TungstenNarrow-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten';
+  src: url('./font/Tungsten-Black.eot');
+  src: local('Tungsten Black'), local('Tungsten-Black'),
+  url('./font/Tungsten-Black.eot?#iefix') format('embedded-opentype'),
+  url('./font/Tungsten-Black.woff2') format('woff2'),
+  url('./font/Tungsten-Black.woff') format('woff'),
+  url('./font/Tungsten-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten';
+  src: url('./font/Tungsten-Bold.eot');
+  src: local('Tungsten Bold'), local('Tungsten-Bold'),
+  url('./font/Tungsten-Bold.eot?#iefix') format('embedded-opentype'),
+  url('./font/Tungsten-Bold.woff2') format('woff2'),
+  url('./font/Tungsten-Bold.woff') format('woff'),
+  url('./font/Tungsten-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten';
+  src: url('./font/Tungsten-SemiBold.eot');
+  src: local('Tungsten SemiBold'), local('Tungsten-SemiBold'),
+  url('./font/Tungsten-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('./font/Tungsten-SemiBold.woff2') format('woff2'),
+  url('./font/Tungsten-SemiBold.woff') format('woff'),
+  url('./font/Tungsten-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten Condensed';
+  src: url('./font/TungstenCondensed-Thin.eot');
+  src: local('Tungsten Condensed Thin'), local('TungstenCondensed-Thin'),
+  url('./font/TungstenCondensed-Thin.eot?#iefix') format('embedded-opentype'),
+  url('./font/TungstenCondensed-Thin.woff2') format('woff2'),
+  url('./font/TungstenCondensed-Thin.woff') format('woff'),
+  url('./font/TungstenCondensed-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten Narrow XLight';
+  src: url('./font/TungstenNarrow-ExtraLight.eot');
+  src: local('Tungsten Narrow ExtraLight'), local('TungstenNarrow-ExtraLight'),
+  url('./font/TungstenNarrow-ExtraLight.eot?#iefix') format('embedded-opentype'),
+  url('./font/TungstenNarrow-ExtraLight.woff2') format('woff2'),
+  url('./font/TungstenNarrow-ExtraLight.woff') format('woff'),
+  url('./font/TungstenNarrow-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
