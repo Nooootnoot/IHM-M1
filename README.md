@@ -20,11 +20,11 @@ Avant de lancer le projet, assurez-vous d'avoir installé :
 ## Installation
 1. Clonez ce dépôt sur votre machine locale :
     ```bash
-    git clone <url-du-repository>
+    git clone https://github.com/Nooootnoot/IHM-M1
     ```
 2. Accédez au dossier du projet :
     ```bash
-    cd <nom-du-dossier>
+    cd IHM-M1
     ```
 3. Installez les dépendances nécessaires :
     ```bash
