@@ -39,13 +39,6 @@ npm run dev
 
 Une fois le serveur démarré, vous pouvez accéder au site via votre navigateur à l'adresse suivante :
 ```
-http://localhost:3000
+http://localhost:"Votre Port"
 ```
 (Note : le port peut varier en fonction de la configuration.)
-
-## Technologies utilisées
-- **Node.js** : environnement d'exécution JavaScript côté serveur.
-- **npm** : gestionnaire de paquets pour installer les dépendances.
-
-## Contributeurs
-Ce projet a été réalisé par des étudiants du Master 1 Informatique.
